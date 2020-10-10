@@ -1,0 +1,10 @@
+Ques 4: WAP to print sum of first n natural numbers using recursion.
+Solution:
+def sumnatural(n):
+    if(n==1):
+        return 1
+    else:
+        return(n+sumnatural(n-1))
+    
+num=int(input("Enter any number: "))
+print(sumnatural(num))
