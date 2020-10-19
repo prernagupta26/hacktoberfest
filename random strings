@@ -1,0 +1,27 @@
+#WAP to create two lists of 10 random numbers between 10 and 30; Find (i) Common numbers in the two lists 
+#(ii) Unique numbers in both the list (iii) Minimum in both the list 
+#(iv) Maximum in both the list (v) Sum of both the lists
+import random as r
+a=r.sample(range(10,30),10)
+b=r.sample(range(10,30),10)
+print("List 1:",a)
+print("List 2:",b)
+c=[]
+d=[]
+e=[]
+for i in a:
+    if i in b:
+        c.append(i)
+    else:
+        d.append(i)
+print("Common elements in both list are:",c)
+print("Unique elements in both list are:",d)
+add=a+b
+temp=min(add)
+print("Minimum number in both list:",temp)
+temp1=max(add)
+print("Maximum number in both list:",temp1)
+for j in range(len(a)):
+    sum1=a[j]+b[j]
+    e.append(sum1)
+print("Sum is:",e)
