@@ -1,0 +1,14 @@
+#lcm of two numbers
+n1=int(input("Enter first number:"))
+n2=int(input("Enter second number:"))
+if(n1<n2):
+    greater=n2
+if(n2<n1):
+    greater=n1
+while(True):
+    if((greater%n1==0) & (greater%n2==0)):
+        lcm=greater
+        break;
+    else:
+        greater=greater+1
+print(lcm)
