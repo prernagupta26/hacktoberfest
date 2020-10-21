@@ -1,0 +1,9 @@
+#write square of number from a to b
+num=input("enter the value of a:")
+n=int(num)
+num1=input("enter the value of b:")
+n1=int(num1)
+for i in range(n,n1+1):
+    temp=i*i
+    print("{}*{}={}".format(i,i,temp))
+    i=i+1
