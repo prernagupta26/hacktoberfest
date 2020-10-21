@@ -1,0 +1,9 @@
+#wap to print sequence of no with given step size and boundary values
+num=input("enter the first boundary value:")
+n=int(num)
+num1=input("enter the end boundary value:")
+n1=int(num1)
+num2=input("enter the step size:")
+n2=int(num2)
+for i in range(n,n1+1,n2):
+    print(i,end='\t')
